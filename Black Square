@@ -1,0 +1,8 @@
+a1,a2,a3,a4= map(int,input().split())
+s=input()
+cal_dic={1:a1,2:a2,3:a3,4:a4}
+tot_cal=0
+for i in range(len(s)):
+    strip=int(s[i])
+    tot_cal+=cal_dic[strip]
+print(tot_cal)
